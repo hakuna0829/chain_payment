@@ -31,7 +31,7 @@ export default function LoginPage() {
     <div className="loginpage">
       <div className="login_container">
         <div className="left_form">
-          <img src="images/cp_logo_2.png" alt="logo" />
+          <img src="images/CP_logo_2.png" alt="logo" />
           <h3>Login to your account</h3>
           <ValidationForm
             onSubmit={handleSubmit}
