@@ -8,7 +8,7 @@ export default function Header() {
       <div>
         {/* <img src="./images/CP_logo.png" alt=""/> */}
         <div className="containerCentered ">
-          <Link to="/" class="img-logo">
+          <Link to="/" className="img-logo">
             <img src="./images/CP_logo.png" alt="" />
           </Link>
           <nav id="main-menu" className="main-menu" role="navigation">
