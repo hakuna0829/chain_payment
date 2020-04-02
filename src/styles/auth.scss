@@ -1,0 +1,24 @@
+.loginpage {
+  margin: auto 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login_container {
+    width: 750px;
+    height: 520px;
+    border: solid 1px #75b2f8;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+
+    .left_form {
+      width: 70%;
+      text-align: left;
+    }
+    .right_panel {
+      width: 30%;
+      align-self: center;
+    }
+  }
+}
