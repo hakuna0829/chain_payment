@@ -13,11 +13,29 @@
     padding: 20px;
 
     .left_form {
-      width: 70%;
+      width: 60%;
       text-align: left;
+      padding-right: 50px;
+      padding-left: 20px;
+      border-right: solid 1px #959595;
+
+      .note {
+        color: #898989;
+        font-size: 12px;
+        font-family: "Raleway";
+      }
+
+      .btn-button-light {
+        font-size: 20px;
+        font-family: "Raleway";
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #0092f9;
+        border: solid 1px #0092f9;
+      }
     }
     .right_panel {
-      width: 30%;
+      width: 40%;
       align-self: center;
     }
   }
