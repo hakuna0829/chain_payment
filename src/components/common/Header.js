@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import LoginPage from "../auth/LoginPage"
+import LoginPage from "../auth/LoginPage";
+import SignUpPage from "../auth/SignupPage";
 
 export default function Header() {
-  const [modalShow, setModalShow] = useState(false);
+  const [loginModalShow, setLoginModalShow] = useState(false);
+  const [signUpModalShow, setSignUpModalShow] = useState(false);
   return (
     <header className="table-row pp-header" role="banner">
       {/* <button type="button" class="btn btn-primary">Primary</button> */}
@@ -30,18 +32,23 @@ export default function Header() {
             </ul>
           </nav>
           <div id="header-buttons" className="header-buttons">
-            <Link to="/signup" className="btn btn-small btn-signup">
+            {/* <Link to="/signup" className="btn btn-small btn-signup"> */}
+            <a href="#" onClick={() => setSignUpModalShow(true)} className="btn btn-small btn-secondary">
               Sign Up
-            </Link>
-            <a href="#" onClick={() => setModalShow(true)} className="btn btn-small btn-secondary">
+            </a>
+            <a href="#" onClick={() => setLoginModalShow(true)} className="btn btn-small btn-secondary">
               Log In
             </a>
           </div>
         </div>
       </div>
       <LoginPage
-        show={modalShow}
-        onHide={() => setModalShow(false)}
+        show={loginModalShow}
+        onHide={() => setLoginModalShow(false)}
+      />
+      <SignUpPage
+        show={signUpModalShow}
+        onHide={() => setSignUpModalShow(false)}
       />
     </header>
   );

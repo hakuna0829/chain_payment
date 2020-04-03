@@ -11,18 +11,31 @@ import validator from "validator";
 import Recaptcha from "react-recaptcha";
 import "../../styles/auth.scss";
 
-export default function LoginPage(props) {
+export default function SignUpPage(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [rePassword, setRePassword] = useState("");
   const [isRemember, setRemember] = useState(false);
   const [isVerified, setVerified] = useState(false);
+  const [firstName, setFristName] = useState("");
+  const [lastName, setLastName] = useState("");
   // create our ref
   const refEmail = useRef();
   const refPwd = useRef();
   const refForm = useRef();
+  const refFirstName = useRef();
+  const refLastName = useRef();
 
   // const formRef = createRef();
   const refRemember = useRef();
+
+  let handleFirstName = e => {
+    setFristName(e.target.value);
+  };
+
+  let handleLastName = e => {
+    setLastName(e.target.value);
+  };
 
   let handleEmail = e => {
     setEmail(e.target.value);
@@ -32,17 +45,24 @@ export default function LoginPage(props) {
     setPassword(e.target.value);
   };
 
-  let handleRemember = e => {
-    setRemember(e.target.value);
+  let handleRePassword = e => {
+    setRePassword(e.target.value);
+  };
+
+  let matchPassword = value => {
+    console.log("match pwd", value);
+    return value && value === password;
   };
 
   let recaptchaLoaded = e => {
     console.log("captcha loaded");
   };
+
   let verifyCallback = e => {
     console.log("captcha verified");
     setVerified(true);
   };
+
   let handleSubmit = (e, formData, inputs) => {
     e.preventDefault();
     if(isVerified)
@@ -67,14 +87,41 @@ export default function LoginPage(props) {
             <div className="left_form">
               <img src="images/CP_logo_2.png" alt="logo" />
               <div>
-                <h3>Login to your account</h3>
+                <h3>Create your ChainPayment Account</h3>
 
                 <ValidationForm
                   onSubmit={handleSubmit}
                   onErrorSubmit={handleErrorSubmit}
                   ref={refForm}
                 >
+                  <div className="form-group row">
+                    <div className="col-sm-6">
+                      {/* <label htmlFor="firstName">First name</label> */}
+                      <TextInput
+                        name="firstName"
+                        id="firstName"
+                        required
+                        value={firstName}
+                        onChange={handleFirstName}
+                        inputref={refFirstName}
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      {/* <label htmlFor="firstName">Last name</label> */}
+                      <TextInput
+                        name="lastName"
+                        id="lastName"
+                        required
+                        value={lastName}
+                        onChange={handleLastName}
+                        inputref={refLastName}
+                        placeholder="Last name"
+                      />
+                    </div>
+                  </div>
                   <div className="form-group">
+                    {/* <label htmlFor="email">Email</label> */}
                     <TextInput
                       name="email"
                       id="email"
@@ -106,21 +153,30 @@ export default function LoginPage(props) {
                       inputref={refPwd}
                     />
                   </div>
+
                   <div className="form-group">
-                    <Checkbox
-                      name="isRemember"
-                      label="Remember Me"
-                      id="isRemember"
-                      inputref={refRemember}
-                      value={isRemember}
-                      onChange={handleRemember}
+                    {/* <label htmlFor="password">Password</label> */}
+                    <TextInput
+                      name="rePassword"
+                      id="rePassword"
+                      type="password"
+                      placeholder="Confirm Password"
+                      required
+                      validator={matchPassword}
+                      errorMessage={{
+                        required: "Confirm password is required",
+                        validator: "Password does not match"
+                      }}
+                      value={rePassword}
+                      onChange={handleRePassword}
+                      inputref={refPwd}
                     />
                   </div>
-                  <Link to="">Forgot your password?</Link>
+
                   <p className="note">
-                    (If there are too many login attempts, your account
+                    Use 8 or more characters with a mix
                     <br />
-                    will be automatically locked for 60 minutes)
+                    of letters, numbers and symbols
                   </p>
                   <Recaptcha
                     sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"
@@ -129,21 +185,24 @@ export default function LoginPage(props) {
                     verifyCallback={verifyCallback}
                   />
                   <div className="form-group submit_tab">
-                    <button className="btn btn-button-light">LOGIN</button>
+                    <button className="btn btn-button-light">SUBMIT</button>
                   </div>
                 </ValidationForm>
-              </div>
 
-              {/* <Recaptcha 
-            sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"
-            render="explicit"
-            onloadCallback={recaptchaLoaded}
-            ></Recaptcha> */}
+                {/* <Recaptcha 
+                    sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"
+                    render="explicit"
+                    onloadCallback={recaptchaLoaded}
+                    ></Recaptcha> */}
+              </div>
             </div>
             <div className="right_panel">
-              <img src="images/desktop.png" alt="desktop" />
-              <br/><br/>
-              <p>Welcome back!</p>
+              <img src="images/counter.png" alt="counter" />
+              <br />
+              <br />
+              <p>
+                Start accepting digital <br /> currency today!
+              </p>
             </div>
           </div>
         </div>
