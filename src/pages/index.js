@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Layout from "../components/common/Layout";
 import Carousel, { Dots } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
 export default function HomePage() {
+
   return (
     <Layout title="Home page" id="homepage">
       <div>

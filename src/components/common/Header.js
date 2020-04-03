@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import LoginPage from "../auth/LoginPage"
 
 export default function Header() {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <header className="table-row pp-header" role="banner">
       {/* <button type="button" class="btn btn-primary">Primary</button> */}
@@ -31,12 +33,16 @@ export default function Header() {
             <Link to="/signup" className="btn btn-small btn-signup">
               Sign Up
             </Link>
-            <Link to="/login" className="btn btn-small btn-secondary">
+            <a href="#" onClick={() => setModalShow(true)} className="btn btn-small btn-secondary">
               Log In
-            </Link>
+            </a>
           </div>
         </div>
       </div>
+      <LoginPage
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </header>
   );
 }
