@@ -59,7 +59,7 @@ export default function LoginPage() {
             onErrorSubmit={handleErrorSubmit}
             ref={refForm}
           >
-            {/* <div className="form-group">
+            <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <TextInput name="email" id="email" type="email" 
                     validator={validator.isEmail} 
@@ -68,8 +68,8 @@ export default function LoginPage() {
                     onChange={handleEmail}
                     inputref={refEmail}
                     />
-            </div> */}
-            {/* <div className="form-group">
+            </div>
+            <div className="form-group">
                 <label htmlFor="password">Password</label>
                 <TextInput name="password" id="password" type="password" required 
                     pattern="(?=.*[A-Z]).{6,}"
@@ -84,8 +84,8 @@ export default function LoginPage() {
                     value={isRemember}
                     onChange={handleRemember}
                 />                
-            </div> */}
-            {/* <Link to="">Forgot your password?</Link>
+            </div>
+            <Link to="">Forgot your password?</Link>
             <p className="note">
               (If there are too many login attempts, your account<br/> 
               will be automatically locked for 60 minutes)
@@ -94,10 +94,10 @@ export default function LoginPage() {
             sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"
             render="explicit"
             onloadCallback={recaptchaLoaded}
-            ></Recaptcha> */}
-            {/* <div className="form-group">
+            ></Recaptcha>
+            <div className="form-group">
                 <button className="btn btn-button-light">LOGIN</button>
-            </div> */}
+            </div>
           </ValidationForm>
           
             <Recaptcha 
