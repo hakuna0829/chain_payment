@@ -16,14 +16,20 @@ export default function LoginPage(props) {
   const [password, setPassword] = useState("");
   const [isRemember, setRemember] = useState(false);
   const [isVerified, setVerified] = useState(false);
+  const [isPasswordShown, setPasswordShown] = useState(false);
   // create our ref
   const refEmail = useRef();
   const refPwd = useRef();
   const refForm = useRef();
+  const refModal = useRef();
+
 
   // const formRef = createRef();
   const refRemember = useRef();
 
+  let togglePasswordVisiblity = () => {
+    setPasswordShown(!isPasswordShown);
+  }
   let handleEmail = e => {
     setEmail(e.target.value);
   };
@@ -60,9 +66,10 @@ export default function LoginPage(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      ref={refModal}
     >
       <Modal.Body>
-        <div className="authpage">
+        <div className="authpage" >
           <div className="auth_container">
             <div className="left_form">
               <img src="images/CP_logo_2.png" alt="logo" />
@@ -87,12 +94,12 @@ export default function LoginPage(props) {
                       inputref={refEmail}
                     />
                   </div>
-                  <div className="form-group">
+                  <div className="form-group password-form">
                     {/* <label htmlFor="password">Password</label> */}
                     <TextInput
                       name="password"
                       id="password"
-                      type="password"
+                      type={isPasswordShown ? "" : "password"}
                       placeholder="Password"
                       required
                       pattern="(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}"
@@ -105,6 +112,7 @@ export default function LoginPage(props) {
                       onChange={handlePassword}
                       inputref={refPwd}
                     />
+                    <i className={`fa ${isPasswordShown ? "fa-eye-slash" : "fa-eye"} password-icon`} onClick={togglePasswordVisiblity}></i>
                   </div>
                   <div className="form-group">
                     <Checkbox
@@ -122,15 +130,18 @@ export default function LoginPage(props) {
                     <br />
                     will be automatically locked for 60 minutes)
                   </p>
-                  <Recaptcha
-                    sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"
-                    render="explicit"
-                    onloadCallback={recaptchaLoaded}
-                    verifyCallback={verifyCallback}
-                  />
-                  <div className="form-group submit_tab">
-                    <button className="btn btn-button-light">LOGIN</button>
-                  </div>
+                  {/* <div className="captcha_submit"> */}
+                    <Recaptcha
+                      sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"
+                      render="explicit"
+                      onloadCallback={recaptchaLoaded}
+                      verifyCallback={verifyCallback}
+                    />
+                    <div className="form-group submit_tab">
+                      <button className="btn btn-button-light">LOGIN</button>
+                    </div>
+                  {/* </div> */}
+                 
                 </ValidationForm>
               </div>
 

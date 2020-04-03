@@ -19,6 +19,8 @@ export default function SignUpPage(props) {
   const [isVerified, setVerified] = useState(false);
   const [firstName, setFristName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [isPasswordShown, setPasswordShown] = useState(false);
+  const [isRePasswordShown, setRePasswordShown] = useState(false);
   // create our ref
   const refEmail = useRef();
   const refPwd = useRef();
@@ -28,6 +30,14 @@ export default function SignUpPage(props) {
 
   // const formRef = createRef();
   const refRemember = useRef();
+
+  let togglePasswordVisiblity = () => {
+    setPasswordShown(!isPasswordShown);
+  }
+
+  let toggleRePasswordVisiblity = () => {
+    setRePasswordShown(!isRePasswordShown);
+  }
 
   let handleFirstName = e => {
     setFristName(e.target.value);
@@ -134,12 +144,12 @@ export default function SignUpPage(props) {
                       inputref={refEmail}
                     />
                   </div>
-                  <div className="form-group">
+                  <div className="form-group password-form ">
                     {/* <label htmlFor="password">Password</label> */}
                     <TextInput
                       name="password"
                       id="password"
-                      type="password"
+                      type={isPasswordShown ? "" : "password"}
                       placeholder="Password"
                       required
                       pattern="(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}"
@@ -152,14 +162,15 @@ export default function SignUpPage(props) {
                       onChange={handlePassword}
                       inputref={refPwd}
                     />
+                    <i className={`fa ${isPasswordShown ? "fa-eye-slash" : "fa-eye"} password-icon`} onClick={togglePasswordVisiblity}></i>
                   </div>
 
-                  <div className="form-group">
+                  <div className="form-group password-form">
                     {/* <label htmlFor="password">Password</label> */}
                     <TextInput
                       name="rePassword"
                       id="rePassword"
-                      type="password"
+                      type={isRePasswordShown ? "" : "password"}
                       placeholder="Confirm Password"
                       required
                       validator={matchPassword}
@@ -171,6 +182,7 @@ export default function SignUpPage(props) {
                       onChange={handleRePassword}
                       inputref={refPwd}
                     />
+                    <i className={`fa ${isRePasswordShown ? "fa-eye-slash" : "fa-eye"} password-icon`} onClick={toggleRePasswordVisiblity}></i>
                   </div>
 
                   <p className="note">

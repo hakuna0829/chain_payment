@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import { Link } from "react-router-dom";
 import LoginPage from "../auth/LoginPage";
 import SignUpPage from "../auth/SignupPage";
@@ -6,6 +6,7 @@ import SignUpPage from "../auth/SignupPage";
 export default function Header() {
   const [loginModalShow, setLoginModalShow] = useState(false);
   const [signUpModalShow, setSignUpModalShow] = useState(false);
+    
   return (
     <header className="table-row pp-header" role="banner">
       {/* <button type="button" class="btn btn-primary">Primary</button> */}
@@ -44,7 +45,7 @@ export default function Header() {
       </div>
       <LoginPage
         show={loginModalShow}
-        onHide={() => setLoginModalShow(false)}
+        onHide={() => setLoginModalShow(false)}        
       />
       <SignUpPage
         show={signUpModalShow}
