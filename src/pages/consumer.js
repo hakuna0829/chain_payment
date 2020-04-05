@@ -26,7 +26,7 @@ export default function ConsumerPage() {
               COMING SOON
             </Link>
           </div>
-
+          
           <div className="global_area">
             <div className="photo">
               <img src="/images/global_woman.png" alt="global woman"></img>
@@ -59,7 +59,9 @@ export default function ConsumerPage() {
               </div>
             </div>
           </div>
-
+          <div className="divider" >
+            <hr></hr>
+          </div>
           <div className="friends_area">
             <div className="content">
               <h2>Funds to friends and family</h2>
@@ -94,7 +96,9 @@ export default function ConsumerPage() {
               <img src="/images/friends_guy.png" alt="global woman"></img>
             </div>
           </div>
-
+          <div className="divider" >
+            <hr></hr>
+          </div>
           <div className="shop_area">
             <div className="photo">
               <img src="/images/waitress.png" alt="waitress lady" />
@@ -134,6 +138,9 @@ export default function ConsumerPage() {
                 COMING SOON
               </Link>
             </div>
+          </div>
+          <div className="divider" >
+            <hr></hr>
           </div>
           <div className="future_area">
             <p className="title">The future of money is digital</p>

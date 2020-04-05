@@ -298,8 +298,11 @@ html {
       padding: 20px 2%;
       // border: solid 2px red;
       color: #40496a;
+      justify-content: center;
+
       & > div {
         width: 100%;
+        max-width: 1900px;
       }
     }
 
@@ -559,6 +562,20 @@ html {
           color: $sky_blue_1;
           font-size: 40px;
           font-weight: 600;
+        }
+      }
+
+      .divider {
+        height: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -1px;
+        hr {
+          border: 0;
+          border-top: 1px solid #40496a;
+          margin: 0px;
+          width: 80%;
         }
       }
     }
