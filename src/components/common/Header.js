@@ -6,7 +6,7 @@ import SignUpPage from "../auth/SignupPage";
 export default function Header() {
   const [loginModalShow, setLoginModalShow] = useState(false);
   const [signUpModalShow, setSignUpModalShow] = useState(false);
-    
+
   return (
     <header className="table-row pp-header" role="banner">
       {/* <button type="button" class="btn btn-primary">Primary</button> */}
@@ -34,7 +34,7 @@ export default function Header() {
           </nav>
           <div id="header-buttons" className="header-buttons">
             {/* <Link to="/signup" className="btn btn-small btn-signup"> */}
-            <a href="#" onClick={() => setSignUpModalShow(true)} className="btn btn-small btn-secondary">
+            <a href="#" onClick={() => setSignUpModalShow(true)} className="btn btn-small btn-secondary btn-signup">
               Sign Up
             </a>
             <a href="#" onClick={() => setLoginModalShow(true)} className="btn btn-small btn-secondary">

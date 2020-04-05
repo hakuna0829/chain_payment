@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Provider } from "react-redux";
 import HomePage from "./pages/index";
-import LoginPage from "./components/auth/LoginPage";
+import ConsumerPage from "./pages/consumer";
 import configureStore from "./store";
 
 import "./styles/app.scss";
@@ -17,8 +17,8 @@ export default function App() {
             <Route exact path="/">
               <HomePage />
             </Route>
-            <Route path="/login">
-              <LoginPage />
+            <Route path="/consumers">
+              <ConsumerPage />
             </Route>
           </Switch>
         </div>
