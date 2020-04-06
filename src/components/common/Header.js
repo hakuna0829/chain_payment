@@ -22,10 +22,10 @@ export default function Header() {
                 <Link to="/consumers">Consumers</Link>
               </li>
               <li>
-                <Link to="/Merchants">Merchants</Link>
+                <Link to="/merchants">Merchants</Link>
               </li>
               <li>
-                <Link to="/Supported Coins">Supported Coins</Link>
+                <Link to="/support-coins">Supported Coins</Link>
               </li>
               <li>
                 <Link to="/support">Support</Link>

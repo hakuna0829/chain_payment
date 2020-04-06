@@ -4,10 +4,10 @@ import Layout from "../components/common/Layout";
 import Carousel, { Dots } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
-export default function ConsumerPage() {
+export default function ConsumersPage() {
   return (
     <Layout title="Consumer page">
-      <div className="container_padding" id="consumer_page">
+      <div className="container_padding business" id="consumer_page">
         {/* <div className="content"> */}
         <div>
           <div className="top_header">

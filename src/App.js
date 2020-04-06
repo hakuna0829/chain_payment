@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Provider } from "react-redux";
 import HomePage from "./pages/index";
-import ConsumerPage from "./pages/consumer";
+import ConsumersPage from "./pages/consumers";
+import MerchantsPage from "./pages/merchants";
 import configureStore from "./store";
 
 import "./styles/app.scss";
@@ -18,7 +19,10 @@ export default function App() {
               <HomePage />
             </Route>
             <Route path="/consumers">
-              <ConsumerPage />
+              <ConsumersPage />
+            </Route>
+            <Route path="/merchants">
+              <MerchantsPage />
             </Route>
           </Switch>
         </div>

@@ -27,6 +27,11 @@ html {
       font-family: "Raleway";
       font-size: 18px;
       font-weight: 700;
+
+      &:hover {
+        background: $sky_blue_2;
+        color: white;
+      }
     }
     .btn-new1 {
       background: 0 0;
@@ -34,7 +39,7 @@ html {
       border-radius: 15px;
       box-sizing: border-box;
       margin-right: 8px;
-      color: white;
+      color: $sky_blue_2;
       cursor: pointer;
       display: inline-block;
       line-height: 12px;
@@ -68,6 +73,28 @@ html {
       -ms-touch-action: none;
       touch-action: none;
       vertical-align: middle;
+    }
+
+    .btn-skyblue {
+      background: $sky_blue_1;
+      border: solid 1px white;
+      color: #fff;
+      border-radius: 8px;
+      display: inline-block;
+      line-height: 12px;
+
+      overflow: hidden;
+      padding: 12px 15px;
+      position: relative;
+      text-align: center;
+      -ms-touch-action: none;
+      touch-action: none;
+
+      &:hover {
+        background: 0 0;
+        color: $sky_blue_2;
+        border-color: $sky_blue_1;
+      }
     }
 
     .top_banner {
@@ -181,26 +208,6 @@ html {
           font-size: 18px;
           font-weight: 600;
         }
-
-        .btn-skyblue {
-          background: $sky_blue_1;
-          border: solid 1px white;
-          color: #fff;
-          border-radius: 8px;
-          display: inline-block;
-          line-height: 12px;
-
-          overflow: hidden;
-          padding: 12px 15px;
-          position: relative;
-          text-align: center;
-          -ms-touch-action: none;
-          touch-action: none;
-
-          &:hover {
-            background: #005ea6;
-          }
-        }
       }
     }
 
@@ -243,7 +250,7 @@ html {
     .consumer_section {
       display: flex;
       position: relative;
-      padding: 20px 2%;
+      padding: 20px 2% 0;
       // border: solid 2px red;
       color: #40496a;
       max-width: 1900px;
@@ -254,7 +261,7 @@ html {
         // border: solid 1px black;
         img {
           // position: absolute;
-          width: 60%;
+          width: 65%;
         }
       }
 
@@ -296,27 +303,6 @@ html {
         .bottom_description {
           margin: 30px 0;
         }
-        .btn {
-          font-family: Raleway;
-          font-size: 18px;
-          font-weight: 600;
-        }
-
-        .btn-skyblue {
-          background: $sky_blue_1;
-          border: solid 1px white;
-          color: #fff;
-          border-radius: 8px;
-          display: inline-block;
-          line-height: 12px;
-
-          overflow: hidden;
-          padding: 12px 15px;
-          position: relative;
-          text-align: center;
-          -ms-touch-action: none;
-          touch-action: none;
-        }
       }
     }
 
@@ -334,7 +320,7 @@ html {
       }
     }
 
-    #consumer_page {
+    .business {
       .title {
         font-size: 60px;
         font-weight: 600;
@@ -607,6 +593,25 @@ html {
         }
       }
     }
+    #consumer_page {
+    }
+
+    #merchants_page {
+      .friends_area {
+        justify-content: space-evenly;
+        .content {
+          width: 40%;
+          & > div {
+            display: flex;
+            justify-content: right;
+            width: 80%;
+          }
+        }
+        .photo {
+          width: 30%;
+        }
+      }
+    }
   }
 }
 
@@ -655,9 +660,9 @@ header {
           padding-left: 0;
 
           ul {
-            text-align: right;
+            text-align: center;
             padding-top: 25px;
-            padding-right: 22%;
+            // padding-right: 22%;
             li {
               display: inline-block;
               a {
@@ -682,6 +687,9 @@ header {
             font-family: Raleway;
             font-size: 15px;
             font-weight: 600;
+            &:hover {
+              background: $sky_blue_2;
+            }
           }
           .btn-secondary {
             background: 0 0;
@@ -697,15 +705,18 @@ header {
             text-align: center;
             -ms-touch-action: none;
             touch-action: none;
+            &:hover {
+              border-color: $sky_blue_2;
+            }
           }
 
           .btn-signup {
             background: 0 0;
-            border: solid 1px $sky_blue_1;
+            border: solid 1px $sky_blue_2;
             border-radius: 25px;
             box-sizing: border-box;
             margin-right: 8px;
-            color: white;
+            color: $sky_blue_2;
             cursor: pointer;
             display: inline-block;
 
@@ -719,6 +730,9 @@ header {
             -ms-touch-action: none;
             touch-action: none;
             vertical-align: middle;
+            &:hover {
+              color: white;
+            }
           }
         }
       }

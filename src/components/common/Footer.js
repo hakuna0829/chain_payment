@@ -13,13 +13,13 @@ export default function Footer() {
             <div className="col-sm-12 col-lg-2 col-md-2 ">
               <ul>
                 <li>
-                  <Link to="/merchant">Merchant</Link>
+                  <Link to="/merchants">Merchant</Link>
                 </li>
                 <li>
-                  <Link to="/consumer">Consumer</Link>
+                  <Link to="/consumers">Consumer</Link>
                 </li>
                 <li>
-                  <Link to="/support_coins">Supported Coins</Link>
+                  <Link to="/support-coins">Supported Coins</Link>
                 </li>
               </ul>
             </div>
