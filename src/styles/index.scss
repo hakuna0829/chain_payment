@@ -54,19 +54,19 @@ html {
     }
 
     .btn-new2 {
+      font-size: 29px;
       background: 0 0;
       border: solid 1px $sky_blue_1;
-      border-radius: 8px;
+      border-radius: 15px;
       box-sizing: border-box;
       margin-right: 8px;
-      color: $sky_blue_1;
+      color: $sky_blue_2;
       cursor: pointer;
       display: inline-block;
-
       line-height: 12px;
       min-width: 84px;
       overflow: hidden;
-      padding: 12px 20px;
+      padding: 20px 25px;
       position: relative;
       text-align: center;
       text-decoration: none;
@@ -597,18 +597,40 @@ html {
     }
 
     #merchants_page {
+      .global_area {
+        margin-top: -160px;
+        .photo {
+          width: 33%;
+          img {
+            width: 100%;
+          }
+        }
+      }
       .friends_area {
-        justify-content: space-evenly;
         .content {
-          width: 40%;
+          width: 65%;
+          display: flex;
+          justify-content: flex-end;
           & > div {
-            display: flex;
-            justify-content: right;
-            width: 80%;
+            width: 86%;
           }
         }
         .photo {
           width: 30%;
+        }
+      }
+      .shop_area {
+        .photo {
+          width: 45%;
+          img {
+            width: 100%;
+          }
+        }
+
+        .content {
+          width: 55%;
+          padding: 10px 0 0;
+          align-self: baseline;
         }
       }
     }

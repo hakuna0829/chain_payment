@@ -140,6 +140,91 @@ export default function MerhchantsPage() {
           <div className="divider">
             <hr></hr>
           </div>
+
+          <div className="future_area">
+            <p className="title">With ChainPayments</p>
+            <p className="sub-title">Be in control of your revenue</p>
+            <div className="currency_grid row">
+              <div className="item col-md-4">
+                <img src="./images/chain_save_money.png" alt="save money" />
+                <p className="title">Save money</p>
+                <p className="desc">
+                  No crazy bank fees
+                  <br />
+                  No charge backs
+                  <br />
+                  Reduce short-term borrowing
+                  <br />
+                </p>
+              </div>
+              <div className="item col-md-4">
+                <img src="./images/chain_fraud.png" alt="Eliminate fraud" />
+                <p className="title">Eliminate fraud</p>
+                <p className="desc">
+                  Eliminates credit card fraud
+                  <br />
+                  Personal details and identities are secure
+                  <br />
+                  Chargebacks are a thing of the past
+                  <br />
+                </p>
+              </div>
+              <div className="item col-md-4">
+                <img
+                  src="./images/chain_receive.png"
+                  alt="Receive settlements Fast"
+                />
+                <p className="title">Receive settlements FAST!</p>
+                <p className="desc">
+                  No middlemen to add delays or fees
+                  <br />
+                  Funds transfer without fear of compromise
+                  <br />
+                  Payment is in your account in seconds
+                  <br />
+                </p>
+              </div>
+              <div className="item col-md-4">
+                <img src="./images/chain_api_plugin.png" alt="APIs Plug" />
+                <p className="title">Use existing APIs and plug ins</p>
+                <p className="desc">
+                  Works with existing hardware
+                  <br />
+                  Every major shopping cart plug-n supported
+                  <br />
+                  Seamless integration
+                  <br />
+                </p>
+              </div>
+              <div className="item col-md-4">
+                <img src="./images/chain_dashboard.png" alt="dashboard" />
+                <p className="title">Simplified clean dashboard</p>
+                <p className="desc">
+                  Data is organized
+                  <br />
+                  Instantly view business details
+                  <br />
+                  It’s a suite of free business tools
+                  <br />
+                </p>
+              </div>
+              <div className="item col-md-4">
+                <img src="./images/chain_transact.png" alt="Transact" />
+                <p className="title">Transact and track</p>
+                <p className="desc">
+                  Sales data updates automatically
+                  <br />
+                  Receipts live forever on the blockchain
+                  <br />
+                  Detailed information ready for your CPA or audit
+                  <br />
+                </p>
+              </div>
+            </div>
+            <p className="freedom_coming">
+              An entire world of new customers is waiting
+            </p>
+          </div>
         </div>
       </div>
     </Layout>
