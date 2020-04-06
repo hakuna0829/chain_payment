@@ -30,22 +30,20 @@ html {
     }
     .btn-new1 {
       background: 0 0;
-      border: solid 1px $sky_blue_1;
-      border-radius: 25px;
+      border: solid 1px #14c7ff;
+      border-radius: 15px;
       box-sizing: border-box;
       margin-right: 8px;
       color: white;
       cursor: pointer;
       display: inline-block;
-
       line-height: 12px;
       min-width: 84px;
       overflow: hidden;
-      padding: 12px 15px;
+      padding: 15px 20px;
       position: relative;
       text-align: center;
       text-decoration: none;
-      -ms-touch-action: none;
       touch-action: none;
       vertical-align: middle;
     }
@@ -79,18 +77,44 @@ html {
         position: relative;
         .content {
           position: absolute;
-          top: 35%;
+          top: 25%;
           text-align: center;
           width: 100%;
+          h3 {
+            font-size: 54px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 29px;
+            font-family: "Montserrat";
+            font-weight: 500;
+          }
+          a {
+            font-size: 24px;
+            font-weight: 700;
+          }
         }
       }
       .right_banner {
         position: relative;
         .content {
           position: absolute;
-          top: 35%;
+          top: 25%;
           text-align: center;
           width: 100%;
+          h3 {
+            font-size: 54px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 29px;
+            font-family: "Montserrat";
+            font-weight: 500;
+          }
+          a {
+            font-size: 24px;
+            font-weight: 700;
+          }
         }
       }
       img {
@@ -172,6 +196,10 @@ html {
           text-align: center;
           -ms-touch-action: none;
           touch-action: none;
+
+          &:hover {
+            background: #005ea6;
+          }
         }
       }
     }
@@ -190,7 +218,7 @@ html {
 
         .company {
           span {
-            color: #f2b200;
+            color: $sky_blue_2;
           }
         }
         &:before {
@@ -203,7 +231,7 @@ html {
           line-height: 0px;
           color: #fff;
           font-family: serif;
-          background-color: #f2b200;
+          background-color: $sky_blue_2;
         }
       }
       .BrainhubCarouselItem {
@@ -232,13 +260,13 @@ html {
 
       .content {
         position: relative;
-        width: 50%;
+        width: 60%;
         // border: solid 1px black;
         text-align: left;
         padding: 30px 0;
         font-size: 18px;
         font-family: "Montserrat";
-        padding-left: 20rem;
+        padding-left: 18rem;
 
         h2 {
           color: #14c7ff;
@@ -591,7 +619,7 @@ header {
       width: 100%;
       position: relative;
       z-index: 10;
-      height: 90px;
+      height: 84px;
 
       .containerCentered {
         //   min-width: 100%;
@@ -607,11 +635,12 @@ header {
           left: 2%;
           margin: 0;
           position: absolute;
-          top: 0px;
+          top: 7px;
           width: 379px;
           padding: 10px;
           img {
             padding: 0px;
+            width: 280px;
           }
         }
 
@@ -626,8 +655,9 @@ header {
           padding-left: 0;
 
           ul {
-            text-align: center;
-            padding-top: 20px;
+            text-align: right;
+            padding-top: 25px;
+            padding-right: 22%;
             li {
               display: inline-block;
               a {
@@ -635,8 +665,8 @@ header {
                 color: #fff;
                 letter-spacing: 1px;
                 line-height: 2.7;
-                text-transform: uppercase;
-                font-size: 20px;
+                // text-transform: uppercase;
+                font-size: 15px;
                 font-weight: 600;
               }
             }
@@ -650,7 +680,7 @@ header {
 
           .btn {
             font-family: Raleway;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 600;
           }
           .btn-secondary {
@@ -705,7 +735,7 @@ footer {
     width: 100%;
     position: relative;
     z-index: 10;
-    min-height: 325px;
+    min-height: 280px;
 
     .containerCentered {
       //   min-width: 100%;
@@ -725,25 +755,29 @@ footer {
         }
 
         & > div {
-          padding-top: 10px;
+          // padding-top: 10px;
           ul {
+            margin-bottom: 0px;
             li {
               list-style: none;
               margin-bottom: 20px;
               a {
                 font-family: "Montserrat";
-                font-size: 20px;
+                font-size: 17px;
                 color: white;
-                font-weight: 500;
+                font-weight: 600;
+              }
+              &:last-child {
+                margin-bottom: 0px;
               }
             }
           }
 
           p {
             font-family: "Montserrat";
-            font-size: 20px;
+            font-size: 17px;
             color: white;
-            font-weight: 500;
+            font-weight: 600;
 
             span {
               color: $sky_blue_2;
@@ -757,28 +791,29 @@ footer {
           }
         }
         img {
-          width: 175px;
+          width: 130px;
         }
       }
 
       .bottom {
-        padding: 30px 0 40px;
+        padding: 30px 0;
         text-align: left;
         border-top: solid 2px white;
         color: white;
         font-family: "Montserrat", sans-serif;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 17px;
+        font-weight: 600;
         margin-left: 0px;
         margin-right: 0px;
 
         p {
           padding: 0px;
+          font-size: 17px;
           a {
             color: white;
             font-family: "Montserrat", sans-serif;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 17px;
+            font-weight: 600;
             margin-left: 50px;
           }
         }
@@ -801,10 +836,27 @@ footer {
         .footer-social {
           & > div {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
           }
           a {
             // margin-right: 20px;
+            img {
+              &.facebook {
+                width: 10px;
+              }
+              &.twitter {
+                width: 23px;
+              }
+              &.instagram {
+                width: 22px;
+              }
+              &.telegram {
+                width: 24px;
+              }
+              &.linkedin {
+                width: 22px;
+              }
+            }
           }
         }
       }

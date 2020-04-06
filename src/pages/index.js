@@ -13,7 +13,7 @@ export default function HomePage() {
           <div className="left_banner">
             <img src="images/merchant.png" alt="" />
             <div className="content">
-              <h3>Merchant</h3>
+              <h3>Merchants</h3>
               <p>
                 Start accpeting any digital currency
                 <br />
@@ -157,9 +157,7 @@ export default function HomePage() {
           <div className="content">
             <h2>Take control of your money</h2>
             <p className="subtitle">
-              <span>CONSUMERS:</span> ChainPayments
-              <br />
-              si fast, easy and secure.
+              <span>CONSUMERS:</span> ChainPayments is fast, easy and secure.
             </p>
 
             <div className="checkitem">

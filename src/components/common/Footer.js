@@ -10,7 +10,7 @@ export default function Footer() {
               <img  src="./images/footer_logo.png" alt="" />
             </div>
             
-            <div className="col-sm-4 col-lg-2 col-md-2 ">
+            <div className="col-sm-12 col-lg-2 col-md-2 ">
               <ul>
                 <li>
                   <Link to="/merchant">Merchant</Link>
@@ -24,7 +24,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-sm-4 col-lg-2 col-md-2">
+            <div className="col-sm-12 col-lg-2 col-md-2">
               <ul>
                 <li>
                   <Link to="/merchant">Media Kit</Link>
@@ -38,7 +38,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-sm-4 col-lg-2 col-md-2">
+            <div className="col-sm-12 col-lg-3 col-md-3">
               <ul>
                 <li>
                   <Link to="/merchant">Log In</Link>
@@ -51,7 +51,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-sm-4 col-lg-4 col-md-4">
+            <div className="col-sm-12 col-lg-3 col-md-3">
                 <p>
                     <span>About:</span> ChainPayments is a digital <br></br>
                     currency payment solution built to  <br></br>
@@ -69,19 +69,19 @@ export default function Footer() {
               <li><Link to="/privacy">Privacy</Link></li>
               <li><Link to="/legal">Legal</Link></li>
             </ul> */}
-            <p className="m-0 col-lg-8 col-md-12">
+            <p className="m-0 col-lg-9 col-md-12">
               © Copyright 2020, Aeryus Inc. All Rights Reserved.
               <Link to="/privacy">Privacy</Link>
               <Link to="/legal">Legal</Link>
             </p>
-            <div className="col-lg-4 col-md-12 footer-social">
+            <div className="col-lg-3 col-md-12 footer-social">
               <div className="">
-                <Link to=""><img src="/images/social/facebook.png" alt="facebook"></img></Link>
-                <Link to=""><img src="/images/social/twitter.png" alt="twitter"></img></Link>
-                <Link to=""><img src="/images/social/telegram.png" alt="telegram"></img></Link>
-                <Link to=""><img src="/images/social/LinkedIn.png" alt="LinkedIn"></img></Link>
-                <Link to=""><img src="/images/social/Instagram.png" alt="Instagram"></img></Link>
-                <Link to=""><img src="/images/social/discord.png" alt="discord"></img></Link>
+                <Link to=""><img src="/images/social/facebook.png" className="facebook" alt="facebook"></img></Link>
+                <Link to=""><img src="/images/social/twitter.png" className="twitter" alt="twitter"></img></Link>
+                <Link to=""><img src="/images/social/telegram.png" className="telegram" alt="telegram"></img></Link>
+                <Link to=""><img src="/images/social/LinkedIn.png" className="linkedin" alt="LinkedIn"></img></Link>
+                <Link to=""><img src="/images/social/Instagram.png" className="instagram" alt="Instagram"></img></Link>
+                {/* <Link to=""><img src="/images/social/discord.png" className="facebook" alt="discord"></img></Link> */}
               </div>
               
             </div>

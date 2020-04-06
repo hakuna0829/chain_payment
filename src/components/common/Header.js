@@ -19,7 +19,7 @@ export default function Header() {
           <nav id="main-menu" className="main-menu" role="navigation">
             <ul>
               <li>
-                <Link to="/consumers">Conusmers</Link>
+                <Link to="/consumers">Consumers</Link>
               </li>
               <li>
                 <Link to="/Merchants">Merchants</Link>

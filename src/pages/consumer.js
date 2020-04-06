@@ -47,7 +47,7 @@ export default function ConsumerPage() {
                 <div>
                   <img src="images/circle_greencheck.png" alt="greencheck" />
                 </div>
-                <div>Currency conersion is automatic</div>
+                <div>Currency conversion is automatic</div>
               </div>
               <div className="checkitem">
                 <div>
@@ -73,7 +73,7 @@ export default function ConsumerPage() {
                 <div>
                   <img src="images/circle_greencheck.png" alt="greencheck" />
                 </div>
-                <div>Split the check or pay cleaner, No processing delays</div>
+                <div>Split the check or pay the dry cleaner, no processing delays</div>
               </div>
               <div className="checkitem">
                 <div>
