@@ -637,6 +637,149 @@ html {
         }
       }
     }
+
+    #support_coin_page {
+      width: 100%;
+      .image_row {
+        display: flex;
+        justify-content: center;
+
+        p {
+          margin-bottom: 0px;
+          font-size: 14px;
+        }
+
+        .mobile {
+          width: 27%;
+        }
+        .desktop {
+          padding-left: 10px;
+          width: 35%;
+        }
+        .rule {
+          height: 50px;
+          width: 1px;
+          border-left: solid 1px #676766;
+          position: relative;
+        }
+      }
+
+      .top_div {
+        height: 300px;
+        background-color: #bad8fb;
+        .title {
+          font-size: 58px;
+          font-weight: 600;
+          color: #020d36;
+          position: relative;
+          top: 20%;
+          margin-bottom: 0px;
+        }
+
+        .asset_area {
+          width: 300px;
+          background: white;
+          color: black;
+          border-radius: 10px;
+          text-align: center;
+          height: 130px;
+          position: relative;
+          left: 12%;
+          top: -25px;
+          padding: 8px 0px;
+
+          p {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .coin_list {
+        width: 1100px;
+        // border: solid 1px;
+        margin: 0 auto;
+        margin-top: -55px;
+        ul {
+          list-style: none;
+          padding: 0px;
+          text-align: left;
+
+          li {
+            width: 25%;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-family: "Montserrat";
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+
+            .item {
+              width: 230px;
+              border: solid 1px #75b2f8;
+              border-radius: 8px;
+              color: #616571;
+              padding: 25px 0;
+              box-shadow: 3px 3px 17px #e8f3ff;
+              margin: 0 auto;
+
+              img {
+                &.logo {
+                  // width: 69px;
+                }
+              }
+
+              .image_row {
+                .no-border {
+                  border: none !important;
+                }
+                .mobile {
+                  border-right: 1px solid;
+                  img {
+                    width: 17px;
+                  }
+                }
+                .desktop {
+                  img {
+                    width: 49px;
+                  }
+                }
+              }
+
+              &:hover {
+                color: #0d7ffa;
+              }
+            }
+          }
+        }
+      }
+
+      .request {
+        margin: 0 auto;
+        width: 490px;
+        border: solid 8px #75b2f8;
+        color: black;
+        font-size: 29px;
+        font-weight: 600;
+        padding: 10px 0 0;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        position: relative;
+        span {
+          color: $sky_blue_2;
+        }
+        img {
+          position: absolute;
+          top: -30px;
+          left: -30px;
+          width: 67px;
+        }
+      }
+      .bottom_bar {
+        background-color: #bad8fb;
+        height: 50px;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -649,7 +792,7 @@ header {
       width: 100%;
       position: relative;
       z-index: 10;
-      height: 84px;
+      height: 70px;
 
       .containerCentered {
         //   min-width: 100%;
@@ -657,7 +800,7 @@ header {
         padding-right: 0;
         max-width: 1700px;
         margin: auto;
-        min-height: 75px;
+        min-height: 70px;
         position: relative;
 
         .img-logo {
@@ -665,7 +808,7 @@ header {
           left: 2%;
           margin: 0;
           position: absolute;
-          top: 7px;
+          top: 0px;
           width: 379px;
           padding: 10px;
           img {
@@ -686,7 +829,7 @@ header {
 
           ul {
             text-align: center;
-            padding-top: 25px;
+            padding-top: 15px;
             // padding-right: 22%;
             li {
               display: inline-block;
@@ -698,6 +841,7 @@ header {
                 // text-transform: uppercase;
                 font-size: 15px;
                 font-weight: 600;
+                padding: 10px 25px;
               }
             }
           }
@@ -706,7 +850,7 @@ header {
         .header-buttons {
           right: 2%;
           position: absolute;
-          top: 28px;
+          top: 18px;
 
           .btn {
             font-family: Raleway;
@@ -774,7 +918,7 @@ footer {
     width: 100%;
     position: relative;
     z-index: 10;
-    min-height: 280px;
+    min-height: 220px;
 
     .containerCentered {
       //   min-width: 100%;
@@ -786,7 +930,7 @@ footer {
       position: relative;
       .content {
         display: flex;
-        padding: 40px 0;
+        padding: 30px 0;
         text-align: left;
 
         .logo-img {
@@ -830,12 +974,12 @@ footer {
           }
         }
         img {
-          width: 130px;
+          width: 125px;
         }
       }
 
       .bottom {
-        padding: 30px 0;
+        padding: 20px 0;
         text-align: left;
         border-top: solid 2px white;
         color: white;

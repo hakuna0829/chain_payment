@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import HomePage from "./pages/index";
 import ConsumersPage from "./pages/consumers";
 import MerchantsPage from "./pages/merchants";
+import SupportCoinsPage from "./pages/support-coins";
 import configureStore from "./store";
 
 import "./styles/app.scss";
@@ -23,6 +24,9 @@ export default function App() {
             </Route>
             <Route path="/merchants">
               <MerchantsPage />
+            </Route>
+            <Route path="/support-coins">
+              <SupportCoinsPage />
             </Route>
           </Switch>
         </div>
