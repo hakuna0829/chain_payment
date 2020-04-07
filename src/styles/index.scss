@@ -96,7 +96,19 @@ html {
         border-color: $sky_blue_1;
       }
     }
-
+    .divider {
+      height: 1px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: -1px;
+      hr {
+        border: 0;
+        border-top: 1px solid #40496a;
+        margin: 0px;
+        width: 80%;
+      }
+    }
     .top_banner {
       display: flex;
       position: relative;
@@ -152,7 +164,7 @@ html {
     .business_section {
       display: flex;
       position: relative;
-      padding: 20px 2%;
+      padding: 20px 2% 0px;
       // border: solid 2px red;
       color: #40496a;
       max-width: 1900px;
@@ -213,6 +225,7 @@ html {
 
     .testimonial {
       max-width: 1900px;
+      padding: 40px 0 40px;
       .item {
         height: 250px;
         width: 450px;
@@ -561,6 +574,7 @@ html {
 
             img {
               margin-bottom: 25px;
+              width: 150px;
             }
 
             .title {
@@ -576,20 +590,6 @@ html {
           color: $sky_blue_1;
           font-size: 40px;
           font-weight: 600;
-        }
-      }
-
-      .divider {
-        height: 1px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: -1px;
-        hr {
-          border: 0;
-          border-top: 1px solid #40496a;
-          margin: 0px;
-          width: 80%;
         }
       }
     }

@@ -95,6 +95,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+        <div className="divider">
+          <hr />
+        </div>
         {/* testimonials */}
         <div className="testimonial">
           <Carousel
