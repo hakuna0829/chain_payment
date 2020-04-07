@@ -646,7 +646,7 @@ html {
 
         p {
           margin-bottom: 0px;
-          font-size: 14px;
+          font-size: 14px !important;
         }
 
         .mobile {
@@ -721,6 +721,7 @@ html {
               padding: 25px 0;
               box-shadow: 3px 3px 17px #e8f3ff;
               margin: 0 auto;
+              background: white;
 
               img {
                 &.logo {
