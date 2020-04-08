@@ -6,7 +6,7 @@ import "@brainhubeu/react-carousel/lib/style.css";
 export default function SupportCoinsPage() {
   return (
     <Layout>
-        <div id="support_coin_page">
+        <div className="support_page">
           <div className="top_div">
             <p className="title">Supported Coins</p>
             <div className="asset_area">

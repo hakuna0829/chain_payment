@@ -638,7 +638,7 @@ html {
       }
     }
 
-    #support_coin_page {
+    .support_page {
       width: 100%;
       .image_row {
         display: flex;
@@ -672,8 +672,16 @@ html {
           font-weight: 600;
           color: #020d36;
           position: relative;
-          top: 20%;
+          // top: 20%;
+          padding-top: 30px;
           margin-bottom: 0px;
+        }
+
+        .desc {
+          font-size: 28px;
+          font-weight: 400;
+          color: #020d36;
+          font-family: "Montserrat";
         }
 
         .asset_area {
@@ -690,6 +698,155 @@ html {
 
           p {
             font-size: 22px;
+          }
+        }
+      }
+
+      .meida_list {
+        width: 900px;
+        height: 500px;
+        // border: solid 1px;
+        margin: 0 auto;
+        margin-top: -75px;
+        ul {
+          list-style: none;
+          padding: 0px;
+          text-align: left;
+
+          li {
+            width: 33.3%;
+            display: inline-block;
+            margin-bottom: 30px;
+
+            text-align: center;
+
+            .item {
+              width: 210px;
+              height: 260px;
+              border: solid 1px #75b2f8;
+              border-radius: 8px;
+              color: #2b8ffb;
+              padding: 35px 0;
+              box-shadow: 3px 3px 17px #e8f3ff;
+              margin: 0 auto;
+              background: white;
+              font-family: "Montserrat";
+              font-size: 20px;
+              font-weight: 600;
+
+              .logo {
+                height: 140px;
+                line-height: 140px;
+                img {
+                  // height: 78px;
+                }
+              }
+
+              p {
+                margin: 2rem 0;
+              }
+              &:hover {
+                color: #0d7ffa;
+              }
+            }
+          }
+        }
+      }
+
+      .business_list {
+        width: 1100px;
+        // border: solid 1px;
+        margin: 0 auto;
+        margin-top: -75px;
+        ul {
+          list-style: none;
+          padding: 0px;
+          text-align: left;
+
+          li {
+            width: 25%;
+            display: inline-flex;
+            margin-bottom: 30px;
+
+            text-align: center;
+
+            .item {
+              width: 230px;
+              height: 226px;
+              border: solid 1px #75b2f8;
+              border-radius: 8px;
+              color: #2b8ffb;
+              padding: 35px 0;
+              box-shadow: 3px 3px 17px #e8f3ff;
+              margin: 0 auto;
+              background: white;
+              font-family: "Montserrat";
+              font-size: 20px;
+              font-weight: 600;
+
+              img {
+                height: 78px;
+              }
+              p {
+                margin: 2rem 0;
+              }
+              &:hover {
+                color: #0d7ffa;
+              }
+            }
+          }
+        }
+      }
+
+      .support_list {
+        width: 1500px;
+        margin: 0 auto;
+        margin-top: -40px;
+        margin-bottom: 100px;
+        ul {
+          list-style: none;
+          padding: 0px;
+          text-align: left;
+
+          li {
+            width: 33.3%;
+            display: inline-flex;
+            margin-bottom: 50px;
+            font-family: "Montserrat";
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+
+            .item {
+              width: 440px;
+              min-height: 320px;
+              border: solid 1px #75b2f8;
+              border-radius: 8px;
+              color: #0d7ffa;
+              padding: 25px 0;
+              box-shadow: 3px 3px 17px #e8f3ff;
+              margin: 0 auto;
+              background: white;
+
+              .title {
+                font-size: 33px;
+                font-weight: 600;
+              }
+              .divider {
+                height: 1px;
+                border-top: solid 1px #7a7f95;
+                width: 150px;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+              }
+              img {
+                height: 80px;
+              }
+
+              &:hover {
+                color: #0d7ffa;
+              }
+            }
           }
         }
       }
@@ -762,9 +919,18 @@ html {
         font-size: 29px;
         font-weight: 600;
         padding: 10px 0 0;
-        margin-top: 50px;
-        margin-bottom: 80px;
+        margin-top: 150px;
+        margin-bottom: 150px;
         position: relative;
+        &.wide {
+          // width: 600px;
+          .title {
+            font-size: 29px;
+          }
+          .desc {
+            font-size: 20px;
+          }
+        }
         span {
           color: $sky_blue_2;
         }
@@ -775,10 +941,78 @@ html {
           width: 67px;
         }
       }
+
       .bottom_bar {
         background-color: #bad8fb;
         height: 50px;
         width: 100%;
+      }
+    }
+
+    .contact_page {
+      .title {
+        font-size: 58px;
+        font-weight: 600;
+        color: #020d36;
+        position: relative;
+        // top: 20%;
+        padding-top: 30px;
+        margin-bottom: 0px;
+      }
+
+      .main_div {
+        width: 1700px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        .title {
+          font-size: 30px;
+          font-weight: 600;
+          text-align: left;
+          margin-bottom: 30px;
+        }
+        .form {
+          width: 48%;
+          color: #464646;
+
+          .contact_row {
+            display: flex;
+            align-items: center;
+            border-top: solid 1px #a2a2a2;
+            img {
+              width: 34px;
+            }
+            .info {
+              text-align: left;
+              margin-left: 20px;
+            }
+
+            .info_row {
+              display: flex;
+              width: 50%;
+              align-items: center;
+              .info {
+              }
+            }
+
+            .label {
+              font-size: 25px;
+              font-weight: 600;
+              margin-top: 30px;
+              margin-bottom: 0px;
+            }
+            .desc {
+              font-size: 22px;
+              font-weight: 400;
+              margin-bottom: 30px;
+            }
+          }
+        }
+
+        .map {
+          width: 50%;
+        }
       }
     }
   }
