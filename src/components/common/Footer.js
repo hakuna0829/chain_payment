@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import { Link } from "react-router-dom";
+import LoginPage from "../auth/LoginPage";
+import SignUpPage from "../auth/SignupPage";
+
 export default function Footer() {
+  const [loginModalShow, setLoginModalShow] = useState(false);
+  const [signUpModalShow, setSignUpModalShow] = useState(false);
+
   return (
     <footer className="table-row pp-footer">
       <div>
@@ -27,13 +33,13 @@ export default function Footer() {
             <div className="col-sm-12 col-lg-2 col-md-2">
               <ul>
                 <li>
-                  <Link to="/merchant">Media Kit</Link>
+                  <Link to="/media-kit">Media Kit</Link>
                 </li>
                 <li>
                   <Link to="/consumer">About</Link>
                 </li>
                 <li>
-                  <Link to="/support_coins">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -41,10 +47,10 @@ export default function Footer() {
             <div className="col-sm-12 col-lg-3 col-md-3">
               <ul>
                 <li>
-                  <Link to="/merchant">Log In</Link>
+                  <Link onClick={() => setLoginModalShow(true)}>Log In</Link>
                 </li>
                 <li>
-                  <Link to="/consumer">Sign Up</Link>
+                  <Link onClick={() => setSignUpModalShow(true)}>Sign Up</Link>
                 </li>
                 <li>                 
                 </li>
@@ -88,6 +94,14 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <LoginPage
+        show={loginModalShow}
+        onHide={() => setLoginModalShow(false)}        
+      />
+      <SignUpPage
+        show={signUpModalShow}
+        onHide={() => setSignUpModalShow(false)}
+      />
     </footer>
   );
 }

@@ -6,9 +6,9 @@ import ConsumersPage from "./pages/consumers";
 import MerchantsPage from "./pages/merchants";
 import SupportCoinsPage from "./pages/support-coins";
 import SupportPage from "./pages/support";
-import DirectoryPage from "./pages/directory";
-import MediaKitPage from "./pages/media-kit";
-import ContactUsPage from "./pages/contact";
+// import DirectoryPage from "./pages/directory";
+// import MediaKitPage from "./pages/media-kit";
+// import ContactUsPage from "./pages/contact";
 import configureStore from "./store";
 
 import "./styles/app.scss";
@@ -35,7 +35,7 @@ export default function App() {
             <Route path="/support">
               <SupportPage />
             </Route>
-            <Route path="/directory">
+            {/* <Route path="/directory">
               <DirectoryPage />
             </Route>
             <Route path="/media-kit">
@@ -43,7 +43,7 @@ export default function App() {
             </Route>
             <Route path="/contact">
               <ContactUsPage />
-            </Route>
+            </Route> */}
           </Switch>
         </div>
       </Router>
