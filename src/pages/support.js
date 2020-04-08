@@ -43,7 +43,7 @@ export default function SupportPage() {
                     <p className="title">How To Guides</p>
                     <div className="divider"></div>
                     <p className="desc">You can do a lot with ChainPayments, <br/>
-                    at retail, mobile, and peer-to-peer,<br/>
+                    at retail, mobile, and peer-to-peer.<br/>
                     We'll guide you all the way.</p>
                   </div>                  
                 </li>
