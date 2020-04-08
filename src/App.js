@@ -6,8 +6,8 @@ import ConsumersPage from "./pages/consumers";
 import MerchantsPage from "./pages/merchants";
 import SupportCoinsPage from "./pages/support-coins";
 import SupportPage from "./pages/support";
+import MediaKitPage from "./pages/media-kit";
 // import DirectoryPage from "./pages/directory";
-// import MediaKitPage from "./pages/media-kit";
 // import ContactUsPage from "./pages/contact";
 import configureStore from "./store";
 
@@ -35,12 +35,12 @@ export default function App() {
             <Route path="/support">
               <SupportPage />
             </Route>
-            {/* <Route path="/directory">
-              <DirectoryPage />
-            </Route>
             <Route path="/media-kit">
               <MediaKitPage />
             </Route>
+            {/* <Route path="/directory">
+              <DirectoryPage />
+            </Route>          
             <Route path="/contact">
               <ContactUsPage />
             </Route> */}
