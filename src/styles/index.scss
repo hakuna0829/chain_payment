@@ -262,6 +262,7 @@ html {
     }
     .consumer_section {
       display: flex;
+      justify-content: flex-end;
       position: relative;
       padding: 20px 2% 0;
       // border: solid 2px red;
@@ -270,23 +271,23 @@ html {
 
       .photo {
         position: relative;
-        width: 50%;
+        width: 45%;
         // border: solid 1px black;
         img {
           // position: absolute;
-          width: 65%;
+          width: 100%;
         }
       }
 
       .content {
         position: relative;
-        width: 60%;
+        width: 680px;
         // border: solid 1px black;
         text-align: left;
         padding: 30px 0;
         font-size: 18px;
         font-family: "Montserrat";
-        padding-left: 18rem;
+        // padding-left: 18rem;
 
         h2 {
           color: #14c7ff;
@@ -1277,6 +1278,30 @@ footer {
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .business_section {
+    .photo {
+      width: 45%;
+      // border: solid 1px black;
+      img {
+        // position: absolute;
+        width: 350px !important;
+      }
+    }
+  }
+
+  .consumer_section {
+    .photo {
+      width: 45%;
+      // border: solid 1px black;
+      img {
+        // position: absolute;
+        width: 570px !important;
       }
     }
   }
