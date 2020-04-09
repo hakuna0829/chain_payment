@@ -25,7 +25,7 @@ export default function Header() {
                 <Link to="/merchants">Merchants</Link>
               </li>
               <li>
-                <Link to="/support-coins">Supported Coins</Link>
+                <Link to="/directory">Directory</Link>
               </li>
               <li>
                 <Link to="/support">Support</Link>
