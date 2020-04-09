@@ -7,9 +7,9 @@ import { GoogleMap, withScriptjs, withGoogleMap, Marker  } from "react-google-ma
 function Map() {
   return (
     <GoogleMap
-      defaultCenter={{ lat: 45.421532, lng: -75.697189 }}
-      defaultZoom={10}>
-      <Marker position={{ lat: 45.421532, lng: -75.697189 }}  />
+      defaultCenter={{ lat: 26.12783, lng: -80.143915 }}
+      defaultZoom={15}>
+      <Marker position={{ lat: 26.12783, lng: -80.143915 }}  />
       </GoogleMap>
   );
 }

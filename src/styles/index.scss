@@ -5,6 +5,7 @@
 $background_blue: #020d36;
 $sky_blue_1: #14c7ff;
 $sky_blue_2: #13c2fa;
+$sky_1: #bad8fb;
 body,
 html {
   font-family: Raleway;
@@ -109,6 +110,22 @@ html {
         width: 80%;
       }
     }
+    .top_header {
+      h2 {
+        font-size: 50px;
+      }
+      .sub-title {
+        font-size: 35px;
+      }
+    }
+    .content {
+      h2 {
+        font-size: 50px;
+      }
+      .sub-title {
+        font-size: 35px;
+      }
+    }
     .top_banner {
       display: flex;
       position: relative;
@@ -189,7 +206,7 @@ html {
         font-family: "Montserrat";
         h2 {
           color: #14c7ff;
-          font-size: 40px;
+          // font-size: 40px;
           font-weight: 400;
         }
         .subtitle {
@@ -335,8 +352,9 @@ html {
     }
 
     .business {
-      .title {
-        font-size: 60px;
+      .title,
+      h2 {
+        font-size: 50px;
         font-weight: 600;
         color: #020d36;
       }
@@ -396,7 +414,7 @@ html {
           h2 {
             font-family: "Raleway";
             color: #272e4b;
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 400;
             margin-bottom: 40px;
           }
@@ -459,7 +477,7 @@ html {
           h2 {
             font-family: "Raleway";
             color: #272e4b;
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 400;
             margin-bottom: 40px;
           }
@@ -524,7 +542,7 @@ html {
           h2 {
             font-family: "Raleway";
             color: #272e4b;
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 400;
             margin-bottom: 40px;
           }
@@ -575,7 +593,7 @@ html {
 
             img {
               margin-bottom: 25px;
-              width: 150px;
+              width: 140px;
             }
 
             .title {
@@ -668,8 +686,9 @@ html {
       .top_div {
         height: 300px;
         background-color: #bad8fb;
+        h2,
         .title {
-          font-size: 58px;
+          font-size: 50px;
           font-weight: 600;
           color: #020d36;
           position: relative;
@@ -952,7 +971,7 @@ html {
 
     .contact_page {
       .title {
-        font-size: 58px;
+        font-size: 50px;
         font-weight: 600;
         color: #020d36;
         position: relative;
@@ -1017,6 +1036,12 @@ html {
       }
     }
   }
+}
+
+.blue_area {
+  width: 100%;
+  height: 15px;
+  background-color: $sky_1;
 }
 
 header {
@@ -1084,9 +1109,24 @@ header {
         }
 
         .header-buttons {
-          right: 2%;
+          right: 3%;
           position: absolute;
-          top: 18px;
+          top: 24px;
+          font-size: 15px;
+          font-weight: 600;
+
+          .signup_link {
+            color: $sky_blue_2;
+          }
+
+          .login_link {
+            color: white;
+          }
+
+          .bar {
+            padding: 0 20px;
+            color: white;
+          }
 
           .btn {
             font-family: Raleway;
@@ -1148,13 +1188,17 @@ header {
 footer {
   &.pp-footer {
     //   &.table-row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     transition: height 0.3s ease-out;
     background-color: $background_blue;
     width: 100%;
     position: relative;
     z-index: 10;
     min-height: 220px;
+
+    .blue_area {
+      height: 20px;
+    }
 
     .containerCentered {
       //   min-width: 100%;
@@ -1302,6 +1346,65 @@ footer {
       img {
         // position: absolute;
         width: 570px !important;
+      }
+    }
+  }
+
+  .business {
+    .global_area {
+      .photo {
+        img {
+          width: 350px !important;
+        }
+      }
+    }
+
+    .friends_area {
+      .photo {
+        img {
+          width: 700px !important;
+        }
+      }
+    }
+
+    .shop_area {
+      .photo {
+        img {
+          width: 430px !important;
+        }
+      }
+    }
+  }
+
+  #merchants_page {
+    .global_area {
+      .photo {
+        position: relative;
+        width: 34% !important;
+        text-align: left;
+
+        img {
+          width: 480px !important;
+        }
+      }
+      .content {
+        width: 65%;
+      }
+    }
+
+    .friends_area {
+      .photo {
+        img {
+          width: 550px !important;
+        }
+      }
+    }
+
+    .shop_area {
+      .photo {
+        img {
+          width: 730px !important;
+        }
       }
     }
   }

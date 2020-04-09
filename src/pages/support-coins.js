@@ -8,7 +8,7 @@ export default function SupportCoinsPage() {
     <Layout>
         <div className="support_page">
           <div className="top_div">
-            <p className="title">Supported Coins</p>
+            <h2 className="title">Supported Coins</h2>
             <div className="asset_area">
               <p>Assets are available on</p>
               <div className="image_row">

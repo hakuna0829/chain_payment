@@ -9,7 +9,7 @@ export default function MerhchantsPage() {
       <div className="container_padding business" id="merchants_page">
         <div>
           <div className="top_header">
-            <p className="title">So much more for merchants</p>
+            <h2>So much more for merchants</h2>
             <p className="sub-title">
               More customers. More security. Keep more money.
             </p>
@@ -142,11 +142,12 @@ export default function MerhchantsPage() {
           </div>
 
           <div className="future_area">
-            <p className="title">With ChainPayments</p>
+            <div className="content">
+            <h2>With ChainPayments</h2>
             <p className="sub-title">Be in control of your revenue</p>
             <div className="currency_grid row">
               <div className="item col-md-4">
-                <img src="./images/chain_save_money.png" alt="save money" />
+                <img src="./images/chain_save_money.svg" alt="save money" />
                 <p className="title">Save money</p>
                 <p className="desc">
                   No crazy bank fees
@@ -158,7 +159,7 @@ export default function MerhchantsPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/chain_fraud.png" alt="Eliminate fraud" />
+                <img src="./images/chain_fraud.svg" alt="Eliminate fraud" />
                 <p className="title">Eliminate fraud</p>
                 <p className="desc">
                   Eliminates credit card fraud
@@ -171,7 +172,7 @@ export default function MerhchantsPage() {
               </div>
               <div className="item col-md-4">
                 <img
-                  src="./images/chain_receive.png"
+                  src="./images/chain_receive.svg"
                   alt="Receive settlements Fast"
                 />
                 <p className="title">Receive settlements FAST!</p>
@@ -185,7 +186,7 @@ export default function MerhchantsPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/chain_api_plugin.png" alt="APIs Plug" />
+                <img src="./images/chain_api_plugin.svg" alt="APIs Plug" />
                 <p className="title">Use existing APIs and plug ins</p>
                 <p className="desc">
                   Works with existing hardware
@@ -197,7 +198,7 @@ export default function MerhchantsPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/chain_dashboard.png" alt="dashboard" />
+                <img src="./images/chain_dashboard.svg" alt="dashboard" />
                 <p className="title">Simplified clean dashboard</p>
                 <p className="desc">
                   Data is organized
@@ -209,7 +210,7 @@ export default function MerhchantsPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/chain_transact.png" alt="Transact" />
+                <img src="./images/chain_transact.svg" alt="Transact" />
                 <p className="title">Transact and track</p>
                 <p className="desc">
                   Sales data updates automatically
@@ -224,6 +225,7 @@ export default function MerhchantsPage() {
             <p className="freedom_coming">
               An entire world of new customers is waiting
             </p>
+            </div>
           </div>
         </div>
       </div>

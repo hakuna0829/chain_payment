@@ -33,16 +33,21 @@ export default function Header() {
             </ul>
           </nav>
           <div id="header-buttons" className="header-buttons">
-            {/* <Link to="/signup" className="btn btn-small btn-signup"> */}
-            <a href="#" onClick={() => setSignUpModalShow(true)} className="btn btn-small btn-secondary btn-signup">
+            {/* <Link to="/signup" className="btn btn-small btn-secondary"> */}
+            {/* <a href="#" onClick={() => setSignUpModalShow(true)} className=" btn-signup">
               Sign Up
             </a>
-            <a href="#" onClick={() => setLoginModalShow(true)} className="btn btn-small btn-secondary">
+            <a href="#" onClick={() => setLoginModalShow(true)} className="">
               Log In
-            </a>
+            </a> */}
+            <Link onClick={() => setSignUpModalShow(true)} className="signup_link">Sign Up</Link>
+            <span className="bar">|</span> 
+            <Link onClick={() => setLoginModalShow(true)} className="login_link">Log In</Link>
+            
           </div>
         </div>
       </div>
+      <div className="blue_area" />
       <LoginPage
         show={loginModalShow}
         onHide={() => setLoginModalShow(false)}        

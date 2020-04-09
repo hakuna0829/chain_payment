@@ -147,7 +147,7 @@ export default function ConsumersPage() {
             <p className="sub-title">Be your own bank</p>
             <div className="currency_grid row">
               <div className="item col-md-4">
-                <img src="./images/currency_wallet.png" alt="wallet" />
+                <img src="./images/currency_wallet.svg" alt="wallet" />
                 <p className="title">Multi-currency wallet</p>
                 <p className="desc">
                   Pay anyone in your contact list
@@ -159,7 +159,7 @@ export default function ConsumersPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/currency_secure.png" alt="wallet" />
+                <img src="./images/currency_secure.svg" alt="wallet" />
                 <p className="title">Secure</p>
                 <p className="desc">
                   Way safer than banks
@@ -171,7 +171,7 @@ export default function ConsumersPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/currency_fast.png" alt="wallet" />
+                <img src="./images/currency_fast.svg" alt="wallet" />
                 <p className="title">Fast</p>
                 <p className="desc">
                   No waiting on transactions
@@ -183,7 +183,7 @@ export default function ConsumersPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/currency_transact.png" alt="wallet" />
+                <img src="./images/currency_transact.svg" alt="wallet" />
                 <p className="title">Transact and Track</p>
                 <p className="desc">
                   No limits
@@ -195,7 +195,7 @@ export default function ConsumersPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/currency_fraud.png" alt="wallet" />
+                <img src="./images/currency_fraud.svg" alt="wallet" />
                 <p className="title">Fraud detection</p>
                 <p className="desc">
                   Only you can access your funds
@@ -207,7 +207,7 @@ export default function ConsumersPage() {
                 </p>
               </div>
               <div className="item col-md-4">
-                <img src="./images/currency_converts.png" alt="wallet" />
+                <img src="./images/currency_converts.svg" alt="wallet" />
                 <p className="title">Converts any digital currency</p>
                 <p className="desc">
                   Supports all common digital currencies

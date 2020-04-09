@@ -8,7 +8,7 @@ export default function DirectoryPage() {
     <Layout>
         <div className="support_page">
           <div className="top_div">
-            <p className="title">Businesses that accept digital currency</p>
+            <h2>Businesses that accept digital currency</h2>
             
           </div>
        

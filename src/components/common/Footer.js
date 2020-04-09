@@ -9,6 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="table-row pp-footer">
+       <div className="blue_area" />
       <div>
         <div className="containerCentered">
           <div className="content">
