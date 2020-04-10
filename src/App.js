@@ -8,7 +8,7 @@ import SupportCoinsPage from "./pages/support-coins";
 import SupportPage from "./pages/support";
 import MediaKitPage from "./pages/media-kit";
 import DirectoryPage from "./pages/directory";
-// import ContactUsPage from "./pages/contact";
+import ContactUsPage from "./pages/contact";
 import configureStore from "./store";
 
 import "./styles/app.scss";
@@ -38,9 +38,9 @@ export default function App() {
             <Route path="/media-kit">
               <MediaKitPage />
             </Route>
-            {/* <Route path="/contact">
+            <Route path="/contact">
               <ContactUsPage />
-            </Route> */}
+            </Route>
             <Route path="/directory">
               <DirectoryPage />
             </Route>
